@@ -1,0 +1,78 @@
+$bg: #f0f0f3;
+
+body {
+  background: $bg;
+  margin: 0;
+  padding: 4em;
+  font-family: 'Abel', sans-serif;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 3em;
+  letter-spacing: 5px;
+  color: #444;
+  font-size: 26px;
+}
+
+.circles {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 1em;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+
+  p,h2 {
+    text-align: center;
+  }
+
+  .bg-color,
+  .box-shadow{
+    h2 {
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: normal;
+      color: #333;
+    }
+
+    p {
+      color: #666;
+    }
+  }
+}
+
+.flat {
+  margin: auto;
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  background: $bg;
+  box-shadow:
+          -10px -10px 30px #fff,
+          10px 10px 30px #aeaec040;
+}
+
+.convex {
+  margin: auto;
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  background: $bg;
+  box-shadow:
+          -10px -10px 30px #fff,
+          10px 10px 30px #aeaec040,
+          inset -10px -10px 10px #aeaec025,
+          inset 10px 10px 10px #fff;
+}
+
+.concave {
+  margin: auto;
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  background: $bg;
+  box-shadow:
+          inset -10px -10px 10px #ffffff70,
+          inset 10px 10px 10px #aeaec020;
+}
